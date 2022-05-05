@@ -1,7 +1,6 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Views/Home.jsx"
-import Contact from "./Views/Contact.jsx"
+import Home from "./Views/Home/Home.jsx"
+import Contact from "./Views/Contact/Contact.jsx"
 
 function App() {
   return (
