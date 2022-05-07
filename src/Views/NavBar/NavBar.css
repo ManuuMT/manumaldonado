@@ -67,13 +67,8 @@ a{
     display: none;
 }
 
-@media (max-width: 768px) {
-    .nav-menu-item{
-        font-size: 1.5rem;
-    }
-}
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .nav-menu{
         width: 100vw;
         align-items: center;
