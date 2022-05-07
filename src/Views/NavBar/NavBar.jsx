@@ -15,7 +15,7 @@ const NavBar = () => {
             <nav className="nav">
                 
                 <Link to="/">
-                    <div className="logo">{title}</div>
+                    <h3 className="logo">{title}</h3>
                 </Link>
 
                 <button className="nav-toggle" onClick={() => HandleClick()}>
@@ -25,18 +25,6 @@ const NavBar = () => {
                 <div className={state}>
                     <ul className="nav-menu">
                         
-                        <li className="nav-menu-item">  
-                            <Link to="/">
-                                <div className="navbar-link">Home</div>
-                            </Link>
-                        </li>
-
-                        <li className="nav-menu-item">  
-                            <Link to="/">
-                                <div className="navbar-link">Home</div>
-                            </Link>
-                        </li>
-
                         <li className="nav-menu-item">  
                             <Link to="/">
                                 <div className="navbar-link">Home</div>

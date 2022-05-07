@@ -1,8 +1,7 @@
 .header {
-    height: 80px;
+    height: 12%;
     width: 100%;
     position: fixed;
-    left: 0;
     top: 0;
 }
 
@@ -21,11 +20,10 @@ a{
 }
 
 .logo{
-    font-size: 30px;
-    color: #5b28e8;
-    font-weight: bold;
-    margin-left: 40px;
+    color: white;
+    margin-left: 20%;
     line-height: 80px;
+    white-space: nowrap;
 }
 
 .nav-menu{
@@ -33,15 +31,14 @@ a{
     flex-direction: column;
     list-style: none;
     background-color: #01000a;
-    width: 350px;
+    width: 20vw;
     height: 100vh;
-    margin-top: 0px;
     justify-content: center;
 }
 
 .nav-menu-item{
-    font-size: 30px;
-    padding: 15px;
+    font-size: 2em;
+    padding: 2%;
 }
 
 .nav-toggle{
@@ -49,23 +46,46 @@ a{
     height: 40px;
     width: 40px;
     border-radius: 20px;
-    right: 175px;
+    right: 10%;
     top: 20px;
-    color: white;
-    background-color: #5b28e8;
+    color: black;
+    background-color: white;
     border: none;
 }
 
 .nav-button{
-    background-color: #5b28e8;
+    background-color: #d0ee0f;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 1rem;
     height: 40px;
-    width: 100px;
+    width: 10vw;
 }
 
 .off{
     display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-menu-item{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-menu{
+        width: 100vw;
+        align-items: center;
+    }
+    .header{
+        background-color: #01000a;
+    }
+    .nav-menu-item{
+        font-size: 2rem;
+        padding: 2%;
+    }
+    .nav-button{
+        width: 30vw;
+    }
 }

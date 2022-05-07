@@ -17,7 +17,7 @@ const HeroTitle = () => {
                         <div className="col-md-6 col-sm-12 py-5">
                             <div className="main-message text-center">
                                 <h3>Hello!</h3>
-                                <h1>I am Emanuel</h1>
+                                <h1 className="name"><strong>I am Emanuel</strong></h1>
                                 <h2>- Full Stack Developer -</h2>
                             </div>
                         </div>
@@ -26,8 +26,6 @@ const HeroTitle = () => {
 
                 <div className="col-md-2 col-lg-3"></div>
             </div>
-            {/*<img src="https://i.imgur.com/4oHOotx.gif" className="background-img" alt="Loading..." />*/}
-            {/*<img src={imageSource} className="background-img"/>*/}
         </div>
         <div className="cuadrado"></div>
         </>
