@@ -8,7 +8,6 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 .navbar-link{
@@ -21,9 +20,9 @@ a{
 
 .logo{
     color: white;
-    margin-left: 20%;
     line-height: 80px;
     white-space: nowrap;
+    margin-left: 100%;
 }
 
 .nav-menu{
@@ -58,7 +57,7 @@ a{
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     height: 40px;
     width: 10vw;
 }
