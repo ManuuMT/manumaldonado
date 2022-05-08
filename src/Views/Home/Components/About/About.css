@@ -1,0 +1,32 @@
+.about{
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(37, 36, 36);
+}
+
+.text{
+    color: white;
+}
+
+.text:hover{
+    color:#d0ee0f ;
+}
+
+.skill{
+    width: 100px;
+    height: 100px;
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.skill:hover{
+    filter: none;
+    -webkit-filter: none;
+}
+

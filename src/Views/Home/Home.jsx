@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar.jsx"
+import About from "./Components/About/About.jsx";
 import HeroTitle from "./Components/HeroTitle/HeroTitle.jsx";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <NavBar/>
             <HeroTitle/>
+            <About/>
         </>
         
     );
