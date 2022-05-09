@@ -8,8 +8,8 @@ const About = () => {
   return (
     <div className="container-fluid about-body pt-5" id="about">
       <div className="row text-center">
-        <div className="col-lg-3"></div>
-        <div className="col-lg-6">
+        <div className="col-lg-3 col-md-2 col-sm-0"></div>
+        <div className="col-lg-6 col-md-8 col-sm-12">
           <div className="row">
             <h3 className="name">About Me</h3>
           </div>
@@ -50,7 +50,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="col-lg-3"></div>
+      <div className="col-lg-3 col-md-2 col-sm-0"></div>
     </div>
   );
 };
