@@ -3,7 +3,7 @@ import "./Skills.scss";
 import Tech from "./Tech.jsx";
 import { Sources } from "./Sources.js";
 
-const About = () => {
+const Skills = () => {
   return (
     <div className="container-fluid">
       <div className="row mt-5">
@@ -56,4 +56,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skills;
