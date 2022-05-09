@@ -12,6 +12,10 @@
 .navbar-link {
   color: white;
   cursor: pointer;
+  transition: 0.5s;
+}
+.navbar-link:hover {
+  color: #d0ee0f;
 }
 
 a {
