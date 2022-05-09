@@ -10,6 +10,12 @@ import react from "../../../../assets/img/tech/react.png";
 import sass from "../../../../assets/img/tech/sass.png";
 import sql from "../../../../assets/img/tech/sql.png";
 import typescript from "../../../../assets/img/tech/typescript.png";
+import adobePS from "../../../../assets/img/tools/adobe-ps.png"
+import adobeXD from "../../../../assets/img/tools/adobe-xd.png"
+import figma from "../../../../assets/img/tools/figma.png"
+import mockoon from "../../../../assets/img/tools/mockoon.png"
+import notion from "../../../../assets/img/tools/notion.png"
+import postman from "../../../../assets/img/tools/postman.png"
 
 export const Sources = {
     bootstrap: bootstrap,
@@ -23,5 +29,11 @@ export const Sources = {
     react: react,
     sass: sass,
     sql: sql,
-    typescript: typescript 
+    typescript: typescript, 
+    adobePS: adobePS,
+    adobeXD: adobeXD,
+    figma: figma,
+    mockoon: mockoon,
+    notion: notion,
+    postman: postman
 }
