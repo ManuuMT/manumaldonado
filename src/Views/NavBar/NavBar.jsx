@@ -13,11 +13,11 @@ const NavBar = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <Link to="/">
+        <Link to="hero">
           <h3 className="logo">{title}</h3>
         </Link>
         <button className="nav-toggle" onClick={() => HandleClick()}>
-          <i className="fas fa-bars"></i>
+          <i className={state === "off" ? "fas fa-bars" : "fa-solid fa-x"}></i>
         </button>
         <div className={state}>
           <ul className="nav-menu">
@@ -26,7 +26,6 @@ const NavBar = () => {
                 <div className="navbar-link">Hello!</div>
               </Link>
             </li>
-
             <li className="nav-menu-item">
               <Link to="skills" offset={-100}>
                 <div className="navbar-link">Skills</div>

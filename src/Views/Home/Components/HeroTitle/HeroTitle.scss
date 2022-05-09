@@ -1,43 +1,44 @@
-.main{
-    background-image: url(https://i.imgur.com/4oHOotx.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
+.main {
+  background-image: url(https://i.imgur.com/4oHOotx.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.main-message{
-    white-space: nowrap;
-    color: white;
+.main-message {
+  white-space: nowrap;
+  color: white;
 }
 
-.main-row{
-    height: 100vh;
-    align-items: center;
+.main-row {
+  height: 100vh;
+  align-items: center;
 }
 
-.name{
-    color: #d0ee0f;
+.name {
+  color: #d0ee0f;
 }
 
-.title{
-    background-color: rgba(0, 0, 0, 0.2);
+.title {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.main-pic{
-    width: 200px;
-    height: 200px;
+.main-pic {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(10%);
 }
 
-.main-title{
-    color: white;
-    width: 100%;
+.main-title {
+  color: white;
+  width: 100%;
 }
 
-.content{
-    align-items: center;
+.content {
+  align-items: center;
 }
 
 @media (max-width: 768px) {
-    .main{
-        background-position-x: right;
-    }
+  .main {
+    background-position-x: right;
+  }
 }
