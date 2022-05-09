@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Views/Home/Home.jsx"
-import Contact from "./Views/Contact/Contact.jsx"
+import Home from "./Views/Home/Home.jsx";
 
 function App() {
   return (
@@ -8,8 +7,7 @@ function App() {
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
         <Router> 
           <Routes>
-            <Route path="/" element={<Home/>} />  
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/" element={<Home/>}/> 
           </Routes>
         </Router>  
     </div>

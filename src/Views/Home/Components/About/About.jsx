@@ -6,7 +6,7 @@ import mail from "../../../../assets/img/social/mail.png";
 
 const About = () => {
   return (
-    <div className="container-fluid about-body pt-5">
+    <div className="container-fluid about-body pt-5" id="about">
       <div className="row text-center">
         <div className="col-lg-3"></div>
         <div className="col-lg-6">

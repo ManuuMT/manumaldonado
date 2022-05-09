@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -22,26 +22,26 @@ const NavBar = () => {
         <div className={state}>
           <ul className="nav-menu">
             <li className="nav-menu-item">
-              <Link to="/">
-                <div className="navbar-link">Home</div>
+              <Link to="hero">
+                <div className="navbar-link">Hello!</div>
               </Link>
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/about">
-                <div className="navbar-link">About</div>
+              <Link to="skills" offset={-100}>
+                <div className="navbar-link">Skills</div>
               </Link>
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/contact">
-                <div className="navbar-link">Contact</div>
+              <Link to="about">
+                <div className="navbar-link">About Me</div>
               </Link>
             </li>
 
             <li className="nav-menu-item">
               <Link to="/idontknow">
-                <button className="navbar-link nav-button">Enviar</button>
+                <button className="navbar-link nav-button">Resume</button>
               </Link>
             </li>
           </ul>

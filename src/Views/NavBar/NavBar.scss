@@ -11,6 +11,7 @@
 
 .navbar-link {
   color: white;
+  cursor: pointer;
 }
 
 a {
@@ -60,6 +61,12 @@ a {
   font-size: 1.5rem;
   height: 40px;
   width: 10vw;
+  transition: 0.5s;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #01000a;
 }
 
 .off {

@@ -5,7 +5,7 @@ import { Sources } from "./Sources.js";
 
 const Skills = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="skills">
       <div className="row mt-5">
         <div className="col"></div>
         <div className="col">
