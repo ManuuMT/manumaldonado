@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./NavBar.scss";
+import curriculum from "../../assets/pdf/CV-Emanuel-Maldonado.pdf";
 
 const NavBar = () => {
   const [state, setState] = useState("off");
@@ -39,9 +40,9 @@ const NavBar = () => {
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/idontknow">
+              <a href={curriculum} target="_blank" rel="noreferrer">
                 <button className="navbar-link nav-button">Resume</button>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
