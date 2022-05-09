@@ -1,0 +1,20 @@
+.about-body {
+  background-color: black;
+  height: 50vh;
+}
+
+.body-content {
+  color: white;
+}
+
+.social-icon {
+  height: 60px;
+  width: 60px;
+  margin: 0px 10px;
+  transition: 0.5s;
+  filter: sepia(100%);
+}
+
+.social-icon:hover {
+  filter: none;
+}
