@@ -1,51 +1,52 @@
 .card {
-   background-color: white;
+  background-color: white;
 }
 
-.text{
-    //color:#d0ee0f ;
-    color: black;
+.text {
+  //color:#d0ee0f ;
+  color: black;
 }
 
-.skill{
-    width: 100px;
-    height: 100px;
+.skill {
+  width: 100px;
+  height: 100px;
 }
 
-  .menu-content {
-    width: 30vh;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .menu-content span {
-    transition: transform 0.2s ease-out;
-  }
-  
-  .span-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  .span-text {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(100%);
-  }
-  
-  .menu-content:hover .span-icon {
-    transform: translateY(-200%);
-  }
-  
-  .menu-content:hover .span-text{
-    transform: none;
-  }
+.menu-content {
+  width: 30vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.menu-content span {
+  transition: transform 0.3s ease-out;
+}
+
+.span-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.span-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+}
+
+.menu-content:hover .span-icon {
+  transform: translateY(-200%);
+}
+
+.menu-content:hover .span-text {
+  transform: none;
+}
