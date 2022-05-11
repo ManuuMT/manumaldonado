@@ -59,7 +59,8 @@ a {
 }
 
 .nav-button {
-  background-color: #d0ee0f;
+  background-color: white;
+  color: #01000a;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -70,27 +71,36 @@ a {
 }
 
 .nav-button:hover {
-  background-color: white;
-  color: #01000a;
+  background-color: #d0ee0f;
+  color: white;
 }
 
 .off {
   display: none;
 }
 
+.icon {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .nav-menu {
+    flex-direction: row;
+    position: fixed;
+    top: 60px;
+    left: 0;
     width: 100vw;
+    height: 40px;
     align-items: center;
-  }
-  .header {
-    background-color: #01000a;
+    padding: 0;
   }
   .nav-menu-item {
-    font-size: 2rem;
-    padding: 2%;
+    font-size: 1.2rem;
   }
   .nav-button {
-    width: 30vw;
+    height: 20px;
+    width: 20vw;
+    font-size: 1rem;
+    padding: 0;
   }
 }

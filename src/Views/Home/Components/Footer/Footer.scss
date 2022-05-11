@@ -9,3 +9,12 @@
 .heart {
   color: red;
 }
+
+@media (max-width: 576px) {
+  .footer {
+    height: 10vh;
+  }
+  .footer-content {
+    width: 70%;
+  }
+}
