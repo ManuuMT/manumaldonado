@@ -85,13 +85,22 @@ a {
 
 @media (max-width: 768px) {
   .nav-menu {
+    flex-direction: row;
+    position: fixed;
+    top: 60px;
+    left: 0;
     width: 100vw;
+    height: 40px;
     align-items: center;
+    padding: 0;
   }
-  .header {
-    background-color: #01000a;
+  .nav-menu-item {
+    font-size: 1.2rem;
   }
   .nav-button {
-    width: 30vw;
+    height: 20px;
+    width: 20vw;
+    font-size: 1rem;
+    padding: 0;
   }
 }
