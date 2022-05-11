@@ -26,12 +26,15 @@
 
 @media (max-width: 576px) {
   .about-body {
-    height: 100vh;
-  }
-  .social-media {
-    flex-direction: column;
+    height: 60vh;
   }
   .social-icon {
     margin-top: 3vh;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-body {
+    height: 70vh;
   }
 }
