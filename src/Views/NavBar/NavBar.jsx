@@ -17,7 +17,10 @@ const NavBar = () => {
         <Link to="hero">
           <h3 className="logo">{title}</h3>
         </Link>
-        <button className="nav-toggle" onClick={() => HandleClick()}>
+        <button
+          className="nav-toggle text-center"
+          onClick={() => HandleClick()}
+        >
           <i
             className={
               state === "off" ? "icon fas fa-bars" : "icon fa-solid fa-x"
@@ -45,7 +48,9 @@ const NavBar = () => {
 
             <li className="nav-menu-item">
               <a href={curriculum} target="_blank" rel="noreferrer">
-                <button className="navbar-link nav-button">Resume</button>
+                <button className="navbar-link nav-button text-center">
+                  Resume
+                </button>
               </a>
             </li>
           </ul>

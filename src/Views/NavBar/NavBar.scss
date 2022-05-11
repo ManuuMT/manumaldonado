@@ -79,6 +79,10 @@ a {
   display: none;
 }
 
+.icon {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     width: 100vw;
@@ -87,16 +91,7 @@ a {
   .header {
     background-color: #01000a;
   }
-  .nav-menu-item {
-    font-size: 2rem;
-    padding: 2%;
-  }
   .nav-button {
     width: 30vw;
-  }
-
-  .icon {
-    margin: auto;
-    width: 50%;
   }
 }
