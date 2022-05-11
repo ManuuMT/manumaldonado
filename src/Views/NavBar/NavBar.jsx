@@ -18,7 +18,11 @@ const NavBar = () => {
           <h3 className="logo">{title}</h3>
         </Link>
         <button className="nav-toggle" onClick={() => HandleClick()}>
-          <i className={state === "off" ? "fas fa-bars" : "fa-solid fa-x"}></i>
+          <i
+            className={
+              state === "off" ? "icon fas fa-bars" : "icon fa-solid fa-x"
+            }
+          ></i>
         </button>
         <div className={state}>
           <ul className="nav-menu">

@@ -59,7 +59,8 @@ a {
 }
 
 .nav-button {
-  background-color: #d0ee0f;
+  background-color: white;
+  color: #01000a;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -70,8 +71,8 @@ a {
 }
 
 .nav-button:hover {
-  background-color: white;
-  color: #01000a;
+  background-color: #d0ee0f;
+  color: white;
 }
 
 .off {
@@ -92,5 +93,10 @@ a {
   }
   .nav-button {
     width: 30vw;
+  }
+
+  .icon {
+    margin: auto;
+    width: 50%;
   }
 }
