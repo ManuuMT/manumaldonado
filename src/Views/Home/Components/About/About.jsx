@@ -23,7 +23,7 @@ const About = () => {
               my job and change my life, making programming my full time job.
             </p>
           </div>
-          <div className="row mt-2">
+          <div className="row mt-4">
             <div className="social-media">
               <a
                 href="https://www.linkedin.com/in/emanuel-mt"

@@ -18,3 +18,20 @@
 .social-icon:hover {
   filter: none;
 }
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .about-body {
+    height: 100vh;
+  }
+  .social-media {
+    flex-direction: column;
+  }
+  .social-icon {
+    margin-top: 3vh;
+  }
+}
