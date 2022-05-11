@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./NavBar.scss";
-import curriculum from "../../assets/pdf/EmanuelMaldonado-CurriculumVitae.pdf";
+import curriculum from "../../assets/pdf/Emanuel-Maldonado-Resume.pdf";
 
 const NavBar = () => {
   const [state, setState] = useState("off");
