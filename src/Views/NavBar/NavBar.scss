@@ -56,6 +56,9 @@ a {
   color: black;
   background-color: white;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-button {
@@ -77,10 +80,6 @@ a {
 
 .off {
   display: none;
-}
-
-.icon {
-  width: 100%;
 }
 
 @media (max-width: 768px) {
