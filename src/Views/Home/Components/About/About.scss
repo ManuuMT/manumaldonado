@@ -1,6 +1,6 @@
 .about-body {
   background-color: black;
-  height: 50vh;
+  height: 40vh;
 }
 
 .body-content {
@@ -24,17 +24,20 @@
   justify-content: center;
 }
 
-@media (max-width: 576px) {
+@media (max-height: 768px), (max-width: 768px) {
   .about-body {
-    height: 60vh;
-  }
-  .social-icon {
-    margin-top: 3vh;
+    height: 65vh;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-height: 576px), (max-width: 576px) {
   .about-body {
-    height: 70vh;
+    height: 90vh;
+  }
+}
+
+@media (max-height: 380px) {
+  .about-body {
+    height: 100vh;
   }
 }
