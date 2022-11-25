@@ -5,7 +5,7 @@ import curriculum from "../../assets/pdf/Emanuel-Maldonado-Resume.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(null);
-  const title = "< Manu />";
+  const title = "<ManuDev />";
 
   return (
     <header className="header">

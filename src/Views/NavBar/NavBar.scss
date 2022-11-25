@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 150px;
 }
 
 .nav-logo {
@@ -41,12 +41,12 @@
   background: black;
   height: 2px;
   position: absolute;
-  width: 55%;
+  width: 45%;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .nav-top-span {
-  top: 25%;
+  top: 30%;
 }
 
 .nav-middle-span {
@@ -54,7 +54,7 @@
 }
 
 .nav-bottom-span {
-  top: 65%;
+  top: 60%;
 }
 
 .active {
@@ -106,16 +106,18 @@
   color: white;
   cursor: pointer;
   transition: all 0.5s;
+  padding: 0;
 }
 .nav-link:hover {
   color: #d0ee0f;
 }
 
 .nav-button {
+  margin-top: 20px;
   background: white;
-  color: #01000a;
+  color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 20px;
   height: 40px;
   width: 80%;
@@ -129,6 +131,10 @@
 }
 
 @media (max-width: 768px) {
+  .nav {
+    padding: 0 50px;
+  }
+
   .nav-menu {
     top: 60px;
     width: 100vw;
@@ -136,7 +142,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 60px;
+    padding: 0 0 0 60px;
     transform: translate(0%, -100%);
     transition: all 0.6s ease-in-out;
     margin: 0;
@@ -156,5 +162,6 @@
     width: fit-content;
     padding: 0px 10px;
     font-size: 1rem;
+    margin-top: 0px;
   }
 }
