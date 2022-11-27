@@ -10,44 +10,50 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <Link to="hero">
-          <h3 className="nav-logo">{title}</h3>
-        </Link>
-        <button
-          className={isOpen ? "nav-toggle active" : "nav-toggle"}
-          onClick={() =>
-            isOpen === null ? setIsOpen(true) : setIsOpen(!isOpen)
-          }
-        >
-          <span className="nav-top-span" />
-          <span className="nav-middle-span" />
-          <span className="nav-bottom-span" />
-        </button>
-      </nav>
-      <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-menu-item">
+        <div className="nav-content">
           <Link to="hero">
-            <div className="nav-link">Hello!</div>
+            <h2 className="nav-logo">{title}</h2>
           </Link>
-        </li>
-        <li className="nav-menu-item">
-          <Link to="skills" offset={-100}>
-            <div className="nav-link">Skills</div>
-          </Link>
-        </li>
+          <button
+            className={isOpen ? "nav-toggle active" : "nav-toggle"}
+            onClick={() =>
+              isOpen === null ? setIsOpen(true) : setIsOpen(!isOpen)
+            }
+          >
+            <span className="nav-top-span" />
+            <span className="nav-middle-span" />
+            <span className="nav-bottom-span" />
+          </button>
+        </div>
+      </nav>
+      <div className={isOpen ? "nav-menu active" : "nav-menu"}>
+        <ul className="nav-menu-ul">
+          <li className="nav-menu-item">
+            <Link to="hero">
+              <div className="nav-link">Hello!</div>
+            </Link>
+          </li>
+          <li className="nav-menu-item">
+            <Link to="skills" offset={-100}>
+              <div className="nav-link">Skills</div>
+            </Link>
+          </li>
 
-        <li className="nav-menu-item">
-          <Link to="about">
-            <div className="nav-link">About Me</div>
-          </Link>
-        </li>
+          <li className="nav-menu-item">
+            <Link to="about">
+              <div className="nav-link">About Me</div>
+            </Link>
+          </li>
 
-        <li className="nav-menu-item">
-          <a href={curriculum} target="_blank" rel="noreferrer">
-            <button className="nav-link nav-button text-center">Resume</button>
-          </a>
-        </li>
-      </ul>
+          <li className="nav-menu-item">
+            <a href={curriculum} target="_blank" rel="noreferrer">
+              <button className="nav-link nav-button text-center">
+                Resume
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
