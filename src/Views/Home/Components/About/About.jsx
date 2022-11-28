@@ -1,12 +1,6 @@
 import React from "react";
 import "./About.scss";
-import linkedinIcon from "../../../../assets/img/social/linkedin.png";
-import githubIcon from "../../../../assets/img/social/github.png";
-import mailIcon from "../../../../assets/img/social/mail.png";
-
-const linkedin = "https://www.linkedin.com/in/emanuel-mt";
-const github = "https://www.github.com/ManuuMT";
-const mail = "mailto:emtuero@hotmail.com";
+import { Social } from "./Social.js";
 
 const About = () => {
   return (
@@ -27,14 +21,18 @@ const About = () => {
       <div className="about-contact">
         <h2 className="about-title">Contact Me</h2>
         <div className="social-media">
-          <a href={linkedin} rel="noreferrer" target="_blank">
-            <img className="social-icon" src={linkedinIcon} alt="linkedin" />
+          <a href={Social.linkedinLink} rel="noreferrer" target="_blank">
+            <img
+              className="social-icon"
+              src={Social.linkedinSrc}
+              alt="linkedin"
+            />
           </a>
-          <a href={github} rel="noreferrer" target="_blank">
-            <img className="social-icon" src={githubIcon} alt="github" />
+          <a href={Social.githubLink} rel="noreferrer" target="_blank">
+            <img className="social-icon" src={Social.githubSrc} alt="github" />
           </a>
-          <a href={mail} rel="noreferrer" target="_blank">
-            <img className="social-icon" src={mailIcon} alt="mail" />
+          <a href={Social.mailLink} rel="noreferrer" target="_blank">
+            <img className="social-icon" src={Social.mailSrc} alt="mail" />
           </a>
         </div>
       </div>
