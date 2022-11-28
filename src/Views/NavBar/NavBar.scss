@@ -97,7 +97,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
 .nav-menu.active {
@@ -124,6 +124,7 @@
 }
 .nav-link:hover {
   color: #d0ee0f;
+  scale: 1.1;
 }
 
 .nav-button {
@@ -140,8 +141,8 @@
 
 .nav-button:hover {
   background: #d0ee0f;
-  color: white;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {

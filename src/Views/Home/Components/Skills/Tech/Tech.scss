@@ -1,26 +1,29 @@
-.skill {
+.tech {
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-self: center;
+}
+
+.tech-img {
   width: 100px;
   height: 100px;
 }
 
-.menu-content {
-  width: 30vh;
-  position: relative;
-  overflow: hidden;
+.tech-img-container,
+.tech-text {
+  transition: transform 0.3s ease-in-out;
 }
 
-.menu-content span {
-  transition: transform 0.4s ease-in-out;
-}
-
-.span-icon {
+.tech-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
 }
 
-.span-text {
+.tech-text {
   color: #000000;
   position: absolute;
   top: 0;
@@ -34,10 +37,25 @@
   text-align: center;
 }
 
-.menu-content:hover .span-icon {
+.tech:hover .tech-img-container {
   transform: translateY(-100%);
 }
 
-.menu-content:hover .span-text {
+.tech:hover .tech-text {
   transform: translateY(0%);
+}
+
+@media (max-width: 768px) {
+  .tech {
+    width: 115px;
+  }
+
+  .tech-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .tech-text h3 {
+    font-size: 1em;
+  }
 }

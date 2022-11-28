@@ -20,7 +20,7 @@ const Skills = () => {
         <h2>TOOLS</h2>
       </div>
       <div className="skills-logos-container">
-        <div className="skills-logos">
+        <div className="skills-tools-logos">
           {Tools.map((tools) => (
             <Tech key={tools.title} title={tools.title} src={tools.src} />
           ))}
