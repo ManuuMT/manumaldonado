@@ -5,8 +5,10 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
+  user-select: none;
 }
 
 h1,h2,h3 {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
