@@ -17,7 +17,7 @@ const HeroTitle = () => {
           <div className="main-message">
             <h2>Hello!</h2>
             <h1 className="main-name">I am Emanuel</h1>
-            <h2 className="main-message-shadow">- Full Stack Developer -</h2>
+            <h2 className="main-message-shadow">- Frontend Developer -</h2>
           </div>
         </div>
       </div>
