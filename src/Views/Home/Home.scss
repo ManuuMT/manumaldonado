@@ -1,0 +1,72 @@
+.intro {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+
+.intro-logo {
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+  color: #d0ee0f;
+
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 11ch;
+
+  animation: typing 2s steps(11), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+.intro-left-window,
+.intro-right-window {
+  height: 100vh;
+  width: 100vw;
+  background: #000000;
+  position: fixed;
+}
+
+.intro-left-window {
+  top: 0;
+  left: -100%;
+  animation: closeToRight 2s ease-in forwards 2s;
+}
+
+.intro-right-window {
+  top: 0;
+  left: 100%;
+  animation: closeToLeft 2s ease-in forwards 2s;
+}
+
+.home-scroll-disabled {
+  overflow: hidden;
+}
+
+@keyframes closeToRight {
+  to {
+    left: -50%;
+  }
+}
+
+@keyframes closeToLeft {
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
