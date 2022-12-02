@@ -41,7 +41,12 @@
     gap: 50px;
   }
 
-  .about-description,
+  .about-description {
+    width: 100%;
+    p {
+      text-align: center;
+    }
+  }
   .about-contact {
     width: 100%;
   }

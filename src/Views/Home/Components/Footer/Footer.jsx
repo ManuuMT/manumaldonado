@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="footer-content">
         <p>
           <strong>
-            Designed and developed with<span className="footer-heart"> ❤ </span>
+            Designed and Built with<span className="footer-heart"> ❤ </span>
           </strong>
         </p>
         <p>
-          <strong>by ManuDev ~ 2022</strong>
+          <strong>by Manu Maldonado ~ 2022</strong>
         </p>
       </div>
     </footer>

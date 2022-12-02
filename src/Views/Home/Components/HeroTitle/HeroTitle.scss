@@ -18,12 +18,16 @@
   width: 200px;
   height: 200px;
   filter: grayscale(10%);
+  opacity: 0;
+  animation: ShowHeroPic 0.5s ease-in forwards 1s;
 }
 
 .main-message-container {
   white-space: nowrap;
   color: #ffffff;
   text-align: center;
+  opacity: 0;
+  animation: ShowHeroText 0.5s ease-in forwards 1.5s;
 }
 
 .main-message {
@@ -32,7 +36,8 @@
 }
 
 .main-name {
-  color: #d0ee0f;
+  color: #ffffff;
+  animation: ShowHeroNameColor 1s ease-in forwards 2s;
 }
 
 .main-message-shadow {
@@ -43,6 +48,24 @@
 .main-title {
   color: #ffffff;
   width: 100%;
+}
+
+@keyframes ShowHeroPic {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowHeroText {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowHeroNameColor {
+  to {
+    color: #d0ee0f;
+  }
 }
 
 @media (max-width: 768px) {

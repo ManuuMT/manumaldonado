@@ -10,11 +10,11 @@ const About = () => {
         <div className="about-description-text">
           <p>
             My name is Emanuel Maldonado Tuero, but everyone calls me
-            <strong> Manu</strong>. I am 27 years old. I was born in
-            <strong> Argentina</strong> and I've been living in
-            <strong> Spain</strong> since 2018. I spent the last 11 years
-            working in customer service, but in 2021 I decided to quit my job
-            and change my life, making programming my full time job.
+            <strong> Manu </strong>.I am 27 years old. I was born in
+            <strong> Argentina </strong>and I've been living in
+            <strong> Spain </strong>since 2018. I spent over 10 years working in
+            customer service, but in 2021 I decided to quit my job and change my
+            life, making programming my full time job.
           </p>
         </div>
       </div>
