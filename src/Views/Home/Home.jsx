@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar/Navbar.jsx";
+import NavBar from "../NavBar/NavBar.jsx";
 import Skills from "./Components/Skills/Skills.jsx";
 import HeroTitle from "./Components/HeroTitle/HeroTitle.jsx";
 import About from "./Components/About/About.jsx";
@@ -33,7 +33,7 @@ const Home = () => {
         Intro()
       ) : (
         <>
-          <Navbar />
+          <NavBar />
           <HeroTitle />
           <Skills />
           <About />

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import "./Navbar.scss";
+import "./NavBar.scss";
 import curriculum from "../../assets/pdf/Resume-Emanuel-Maldonado-Tuero.pdf";
 
-const Navbar = () => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(null);
   const title = "<ManuDev />";
 
@@ -64,4 +64,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
