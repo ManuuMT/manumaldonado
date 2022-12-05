@@ -3,11 +3,20 @@
   display: flex;
   padding: 100px 50px;
   overflow: hidden;
+}
 
-  h2 {
-    color: #d0ee0f;
-    padding: 15px 0;
-  }
+.about-title {
+  color: #d0ee0f;
+  padding: 15px 0;
+  transition: all 0.6s ease-in;
+}
+
+.about-title-contact {
+  opacity: 0;
+}
+
+.about-title-contact.show {
+  opacity: 1;
 }
 
 .about-description,
@@ -16,14 +25,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.3s ease-in;
+}
+
+.about-description {
+  transition: all 0.6s ease-in;
   opacity: 0;
 }
 
-.about-description.show,
-.about-contact.show {
+.about-description.show {
   opacity: 1;
-  transform: translate(0%);
 }
 
 .about-description-text {
@@ -34,13 +44,33 @@
   height: 60px;
   width: 60px;
   margin: 0px 10px;
-  transition: 0.5s;
   filter: sepia(100%);
 }
 
 .social-icon:hover {
   filter: none;
   scale: 1.1;
+}
+
+.social-linkedin {
+  opacity: 0;
+  transition: scale 0.3s, filter 0.3s, opacity 0.5s ease-in;
+}
+
+.social-github {
+  opacity: 0;
+  transition: scale 0.3s, filter 0.3s, opacity 0.5s ease-in 0.5s;
+}
+
+.social-mail {
+  opacity: 0;
+  transition: scale 0.3s, filter 0.3s, opacity 0.5s ease-in 1s;
+}
+
+.social-linkedin.show,
+.social-github.show,
+.social-mail.show {
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {
@@ -51,16 +81,10 @@
   }
 
   .about-description {
-    transform: translateX(-25%);
-
     width: 100%;
     p {
       text-align: center;
     }
-  }
-
-  .about-contact {
-    transform: translateX(25%);
   }
 
   .about-contact {

@@ -8,7 +8,6 @@ const About = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(entry);
           if (entry.isIntersecting) {
             entry.target.classList.toggle("show", entry.isIntersecting);
             observer.unobserve(entry.target);
@@ -18,11 +17,13 @@ const About = () => {
       {
         root: null,
         threshold: 0.5,
-        rootMargin: "0px 0px",
+        rootMargin: "0px",
       }
     );
     observer.observe(document.querySelector(".about-description"));
-    observer.observe(document.querySelector(".about-contact"));
+    observer.observe(document.querySelector(".about-title-contact"));
+    const socialIcons = document.querySelectorAll(".social-icon");
+    socialIcons.forEach((icon) => observer.observe(icon));
   }, []);
 
   return (
@@ -41,20 +42,28 @@ const About = () => {
         </div>
       </div>
       <div className="about-contact">
-        <h2 className="about-title">Contact Me</h2>
-        <div className="social-media">
+        <h2 className="about-title about-title-contact">Contact Me</h2>
+        <div className="about-social-media">
           <a href={Social.linkedinLink} rel="noreferrer" target="_blank">
             <img
-              className="social-icon"
+              className="social-icon social-linkedin"
               src={Social.linkedinSrc}
               alt="linkedin"
             />
           </a>
           <a href={Social.githubLink} rel="noreferrer" target="_blank">
-            <img className="social-icon" src={Social.githubSrc} alt="github" />
+            <img
+              className="social-icon social-github"
+              src={Social.githubSrc}
+              alt="github"
+            />
           </a>
           <a href={Social.mailLink} rel="noreferrer" target="_blank">
-            <img className="social-icon" src={Social.mailSrc} alt="mail" />
+            <img
+              className="social-icon social-mail"
+              src={Social.mailSrc}
+              alt="mail"
+            />
           </a>
         </div>
       </div>
