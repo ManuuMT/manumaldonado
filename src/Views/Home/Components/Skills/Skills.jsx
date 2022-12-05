@@ -10,7 +10,7 @@ const Skills = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.toggle("show", entry.isIntersecting);
+            entry.target.classList.add("show");
             observer.unobserve(entry.target);
           }
         });
@@ -31,7 +31,7 @@ const Skills = () => {
   return (
     <div className="skills" id="skills">
       <div className="skills-title">
-        <h2>SKILLS</h2>
+        <h2>My Skill Set</h2>
       </div>
       <div className="skills-logos-container">
         <div className="skills-logos">
@@ -41,7 +41,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="skills-title">
-        <h2>TOOLS</h2>
+        <h2>My Tool Kit</h2>
       </div>
       <div className="skills-logos-container">
         <div className="skills-tools-logos">
