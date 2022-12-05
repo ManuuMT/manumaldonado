@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.scss";
-import curriculum from "../../assets/pdf/Emanuel-Maldonado-Resume.pdf";
+import curriculum from "../../assets/pdf/Resume-Emanuel-Maldonado-Tuero.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(null);
