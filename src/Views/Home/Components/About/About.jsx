@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.scss";
 import { Social } from "./Social.js";
 
 const About = () => {
+  // * Life Cycle
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            entry.target.classList.toggle("show", entry.isIntersecting);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "0px 0px",
+      }
+    );
+    observer.observe(document.querySelector(".about-description"));
+    observer.observe(document.querySelector(".about-contact"));
+  }, []);
+
   return (
     <div className="about" id="about">
       <div className="about-description">
@@ -10,7 +32,7 @@ const About = () => {
         <div className="about-description-text">
           <p>
             My name is Emanuel Maldonado Tuero, but everyone calls me
-            <strong> Manu </strong>.I am 27 years old. I was born in
+            <strong> Manu</strong>. I am 27 years old. I was born in
             <strong> Argentina </strong>and I've been living in
             <strong> Spain </strong>since 2018. I spent over 10 years working in
             customer service, but in 2021 I decided to quit my job and change my

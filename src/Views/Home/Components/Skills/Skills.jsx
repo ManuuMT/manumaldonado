@@ -1,9 +1,33 @@
-import React from "react";
 import "./Skills.scss";
 import Tech from "./Tech/Tech.jsx";
 import { SkillSet, Tools } from "./Sources.js";
+import React, { useEffect } from "react";
 
 const Skills = () => {
+  // * Life Cycle
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.toggle("show", entry.isIntersecting);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 1,
+        rootMargin: "-50px 0px",
+      }
+    );
+
+    const techs = document.querySelectorAll(".tech");
+    const titles = document.querySelectorAll(".skills-title");
+    techs.forEach((tech) => observer.observe(tech));
+    titles.forEach((title) => observer.observe(title));
+  }, []);
+
   return (
     <div className="skills" id="skills">
       <div className="skills-title">

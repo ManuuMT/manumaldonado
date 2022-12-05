@@ -9,7 +9,7 @@ const title = "<ManuDev />";
 
 const Home = () => {
   // * States
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   // * Methods
   const Intro = () => (

@@ -11,6 +11,12 @@
 
 .skills-title {
   text-align: center;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.skills-title.show {
+  opacity: 1;
 }
 
 .skills-logos-container {

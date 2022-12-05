@@ -4,6 +4,15 @@
   overflow: hidden;
   display: grid;
   place-self: center;
+  padding: 10px 0;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 0.6s ease-in-out;
+}
+
+.tech.show {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .tech-img {
@@ -48,6 +57,7 @@
 @media (max-width: 768px) {
   .tech {
     width: 115px;
+    padding: 5px 0;
   }
 
   .tech-img {

@@ -2,6 +2,7 @@
   background: #000000;
   display: flex;
   padding: 100px 50px;
+  overflow: hidden;
 
   h2 {
     color: #d0ee0f;
@@ -15,6 +16,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+.about-description.show,
+.about-contact.show {
+  opacity: 1;
+  transform: translate(0%);
 }
 
 .about-description-text {
@@ -42,11 +51,18 @@
   }
 
   .about-description {
+    transform: translateX(-25%);
+
     width: 100%;
     p {
       text-align: center;
     }
   }
+
+  .about-contact {
+    transform: translateX(25%);
+  }
+
   .about-contact {
     width: 100%;
   }
