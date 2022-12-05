@@ -3,12 +3,16 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer pt-2">
-      <div className="footer-content text-center">
-        <strong>
-          Designed and developed with <span className="heart">❤</span> by Manu ~
-          2022
-        </strong>
+    <footer className="footer">
+      <div className="footer-content">
+        <p>
+          <strong>
+            Designed and Built with<span className="footer-heart"> ❤ </span>
+          </strong>
+        </p>
+        <p>
+          <strong>by Manu Maldonado ~ 2022</strong>
+        </p>
       </div>
     </footer>
   );

@@ -1,56 +1,70 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.scss";
-import linkedinIcon from "../../../../assets/img/social/linkedin.png";
-import githubIcon from "../../../../assets/img/social/github.png";
-import mailIcon from "../../../../assets/img/social/mail.png";
-
-const linkedin = "https://www.linkedin.com/in/emanuel-mt";
-const github = "https://www.github.com/ManuuMT";
-const mail = "mailto:emtuero@hotmail.com";
+import { Social } from "./Social.js";
 
 const About = () => {
+  // * Life Cycle
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.5,
+        rootMargin: "0px",
+      }
+    );
+    observer.observe(document.querySelector(".about-description"));
+    observer.observe(document.querySelector(".about-title-contact"));
+    const socialIcons = document.querySelectorAll(".social-icon");
+    socialIcons.forEach((icon) => observer.observe(icon));
+  }, []);
+
   return (
-    <div
-      className="container-fluid about-body d-flex align-items-center justify-content-center"
-      id="about"
-    >
-      <div className="row">
-        <div className="col-md-6 col-sm-12">
-          <div className="row text-center">
-            <h3 className="name">About Me</h3>
-          </div>
-          <div className="row mt-2">
-            <p className="body-content text-center">
-              My name is Emanuel Maldonado Tuero, but everyone calls me
-              <b> Manu</b>.
-              <br /> I am 26 years old. I was born in <b>Argentina</b> and I've
-              been living in <b>Spain</b> since 2018. <br />I spent the last 11
-              years working in customer service, but in 2021 I decided to quit
-              my job and change my life, making programming my full time job.
-            </p>
-          </div>
+    <div className="about" id="about">
+      <div className="about-description">
+        <h2 className="about-title">About Me</h2>
+        <div className="about-description-text">
+          <p>
+            My name is Emanuel Maldonado Tuero, but everyone calls me
+            <strong> Manu</strong>. I am 27 years old. I was born in
+            <strong> Argentina </strong>and I've been living in
+            <strong> Spain </strong>since 2018. I spent over 10 years working in
+            customer service, but in 2021 I decided to quit my job and change my
+            life, making programming my full time job.
+          </p>
         </div>
-        <div className="col-md-6 col-sm-12">
-          <div className="row contact-row text-center">
-            <h3 className="name">Contact Me</h3>
-          </div>
-          <div className="row mt-2">
-            <div className="social-media">
-              <a href={linkedin} rel="noreferrer" target="_blank">
-                <img
-                  className="social-icon"
-                  src={linkedinIcon}
-                  alt="linkedin"
-                />
-              </a>
-              <a href={github} rel="noreferrer" target="_blank">
-                <img className="social-icon" src={githubIcon} alt="github" />
-              </a>
-              <a href={mail} rel="noreferrer" target="_blank">
-                <img className="social-icon" src={mailIcon} alt="mail" />
-              </a>
-            </div>
-          </div>
+      </div>
+      <div className="about-contact">
+        <h2 className="about-title about-title-contact">Contact Me</h2>
+        <div className="about-social-media">
+          <a href={Social.linkedinLink} rel="noreferrer" target="_blank">
+            <img
+              className="social-icon social-linkedin"
+              src={Social.linkedinSrc}
+              alt="linkedin"
+            />
+          </a>
+          <a href={Social.githubLink} rel="noreferrer" target="_blank">
+            <img
+              className="social-icon social-github"
+              src={Social.githubSrc}
+              alt="github"
+            />
+          </a>
+          <a href={Social.mailLink} rel="noreferrer" target="_blank">
+            <img
+              className="social-icon social-mail"
+              src={Social.mailSrc}
+              alt="mail"
+            />
+          </a>
         </div>
       </div>
     </div>

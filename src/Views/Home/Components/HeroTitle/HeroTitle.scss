@@ -1,44 +1,92 @@
 .main {
-  background-image: url(https://i.imgur.com/4oHOotx.gif);
+  background-image: url(https://media.giphy.com/media/O43cBoyaVTQ8U5YxWn/giphy.gif);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.main-message {
-  white-space: nowrap;
-  color: white;
-}
-
-.main-row {
-  height: 100vh;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.name {
-  color: #d0ee0f;
+.main-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
-.title {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.main-pic {
+.main-profile-pic {
   width: 200px;
   height: 200px;
   filter: grayscale(10%);
+  opacity: 0;
+  animation: ShowHeroPic 0.5s ease-in forwards 1s;
+}
+
+.main-message-container {
+  white-space: nowrap;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  animation: ShowHeroText 0.5s ease-in forwards 1.5s;
+}
+
+.main-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-name {
+  color: #ffffff;
+  animation: ShowHeroNameColor 1s ease-in forwards 2s;
+}
+
+.main-message-shadow {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 5px;
 }
 
 .main-title {
-  color: white;
+  color: #ffffff;
   width: 100%;
 }
 
-.content {
-  align-items: center;
+@keyframes ShowHeroPic {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowHeroText {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowHeroNameColor {
+  to {
+    color: #d0ee0f;
+  }
 }
 
 @media (max-width: 768px) {
   .main {
     background-position-x: right;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .main-message h1 {
+    font-size: 1.5em;
+  }
+
+  .main-message h2 {
+    font-size: 1em;
   }
 }

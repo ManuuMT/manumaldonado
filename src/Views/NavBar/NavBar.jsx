@@ -1,56 +1,67 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import "./NavBar.scss";
-import curriculum from "../../assets/pdf/Emanuel-Maldonado-Resume.pdf";
+import "./Navbar.scss";
+import curriculum from "../../assets/pdf/Resume-Emanuel-Maldonado-Tuero.pdf";
 
-const NavBar = () => {
-  const [state, setState] = useState("off");
-  const title = "< Manu />";
-
-  const HandleClick = () => {
-    state === "off" ? setState("") : setState("off");
-  };
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(null);
+  const title = "<ManuDev />";
 
   return (
     <header className="header">
       <nav className="nav">
-        <Link to="hero">
-          <h3 className="logo">{title}</h3>
-        </Link>
-        <button className="nav-toggle" onClick={() => HandleClick()}>
-          <i className={state === "off" ? "fas fa-bars " : "fa-solid fa-x"}></i>
-        </button>
-        <div className={state}>
-          <ul className="nav-menu">
-            <li className="nav-menu-item">
-              <Link to="hero">
-                <div className="navbar-link">Hello!</div>
-              </Link>
-            </li>
-            <li className="nav-menu-item">
-              <Link to="skills" offset={-100}>
-                <div className="navbar-link">Skills</div>
-              </Link>
-            </li>
-
-            <li className="nav-menu-item">
-              <Link to="about">
-                <div className="navbar-link">About Me</div>
-              </Link>
-            </li>
-
-            <li className="nav-menu-item">
-              <a href={curriculum} target="_blank" rel="noreferrer">
-                <button className="navbar-link nav-button text-center">
-                  Resume
-                </button>
-              </a>
-            </li>
-          </ul>
+        <div className="nav-content">
+          <Link to="hero" spy={true} smooth={true} duration={500}>
+            <h2 className="nav-logo">{title}</h2>
+          </Link>
+          <button
+            className={isOpen ? "nav-toggle active" : "nav-toggle"}
+            onClick={() =>
+              isOpen === null ? setIsOpen(true) : setIsOpen(!isOpen)
+            }
+          >
+            <span className="nav-top-span" />
+            <span className="nav-middle-span" />
+            <span className="nav-bottom-span" />
+          </button>
         </div>
       </nav>
+      <div className={isOpen ? "nav-menu active" : "nav-menu"}>
+        <ul className="nav-menu-ul">
+          <li className="nav-menu-item">
+            <Link to="hero" spy={true} smooth={true} duration={500}>
+              <div className="nav-link">Hello!</div>
+            </Link>
+          </li>
+          <li className="nav-menu-item">
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
+              <div className="nav-link">Skills</div>
+            </Link>
+          </li>
+
+          <li className="nav-menu-item">
+            <Link to="about" spy={true} smooth={true} duration={500}>
+              <div className="nav-link">About Me</div>
+            </Link>
+          </li>
+
+          <li className="nav-menu-item">
+            <a href={curriculum} target="_blank" rel="noreferrer">
+              <button className="nav-link nav-button text-center">
+                Resume
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
 
-export default NavBar;
+export default Navbar;

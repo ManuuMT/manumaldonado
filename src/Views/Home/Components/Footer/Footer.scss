@@ -1,20 +1,28 @@
 .footer {
-  height: 8vh;
-  background-color: white;
+  background: #ffffff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
-.heart {
-  color: red;
+.footer-content {
+  display: flex;
+  padding: 5px 0;
+  gap: 3px;
+  width: fit-content;
+  p {
+    font-size: 1rem;
+  }
+}
+
+.footer-heart {
+  color: #ff0000;
 }
 
 @media (max-width: 576px) {
-  .footer {
-    height: 10vh;
-  }
   .footer-content {
-    width: 70%;
+    padding: 3px 0;
+    flex-direction: column;
+    text-align: center;
   }
 }

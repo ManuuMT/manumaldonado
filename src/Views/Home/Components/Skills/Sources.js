@@ -10,30 +10,33 @@ import react from "../../../../assets/img/tech/react.png";
 import sass from "../../../../assets/img/tech/sass.png";
 import sql from "../../../../assets/img/tech/sql.png";
 import typescript from "../../../../assets/img/tech/typescript.png";
-import adobePS from "../../../../assets/img/tools/adobe-ps.png"
-import adobeXD from "../../../../assets/img/tools/adobe-xd.png"
-import figma from "../../../../assets/img/tools/figma.png"
-import mockoon from "../../../../assets/img/tools/mockoon.png"
-import notion from "../../../../assets/img/tools/notion.png"
-import postman from "../../../../assets/img/tools/postman.png"
+import adobePS from "../../../../assets/img/tools/adobe-ps.png";
+import adobeXD from "../../../../assets/img/tools/adobe-xd.png";
+import figma from "../../../../assets/img/tools/figma.png";
+import mockoon from "../../../../assets/img/tools/mockoon.png";
+import notion from "../../../../assets/img/tools/notion.png";
+import postman from "../../../../assets/img/tools/postman.png";
 
-export const Sources = {
-    bootstrap: bootstrap,
-    css: css,
-    flask: flask,
-    git: git,
-    html5: html5,
-    javascript: javascript,
-    jest: jest,
-    python: python,
-    react: react,
-    sass: sass,
-    sql: sql,
-    typescript: typescript, 
-    adobePS: adobePS,
-    adobeXD: adobeXD,
-    figma: figma,
-    mockoon: mockoon,
-    notion: notion,
-    postman: postman
-}
+export const SkillSet = [
+  { src: html5, title: "HTML5" },
+  { src: css, title: "CSS3" },
+  { src: javascript, title: "Javascript" },
+  { src: react, title: "React" },
+  { src: bootstrap, title: "Bootstrap" },
+  { src: sass, title: "SASS" },
+  { src: python, title: "Python" },
+  { src: flask, title: "Flask" },
+  { src: typescript, title: "Typescript" },
+  { src: git, title: "Git" },
+  { src: sql, title: "SQL" },
+  { src: jest, title: "Jest" },
+];
+
+export const Tools = [
+  { src: adobePS, title: "Adobe Photoshop" },
+  { src: adobeXD, title: "Adobe XD" },
+  { src: figma, title: "Figma" },
+  { src: postman, title: "Postman" },
+  { src: mockoon, title: "Mockoon" },
+  { src: notion, title: "Notion" },
+];
