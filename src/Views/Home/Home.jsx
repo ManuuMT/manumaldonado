@@ -5,6 +5,7 @@ import HeroTitle from "./Components/HeroTitle/HeroTitle.jsx";
 import About from "./Components/About/About.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import "./Home.scss";
+import Projects from "./Components/Projects/Projects.jsx";
 const title = "<ManuDev />";
 
 const Home = () => {
@@ -35,8 +36,9 @@ const Home = () => {
         <>
           <NavBar />
           <HeroTitle />
-          <Skills />
           <About />
+          <Skills />
+          <Projects />
           <Footer />
         </>
       )}
