@@ -20,73 +20,60 @@
 
 .projects-card {
   width: 45%;
-  height: 300px;
+  height: 280px;
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 20px;
+}
+
+.projects-card-img,
+.projects-card-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .projects-card-img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.projects-card-img-prev {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
   opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease-in-out;
 }
 
-.projects-button-live,
 .projects-button-git {
-  height: 30px;
-  width: 100px;
+  width: 50px;
   position: absolute;
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  font-size: 16px;
   transition: all 0.5s;
   opacity: 0;
   transform: translateY(100%);
+  bottom: 15px;
 }
 
-.projects-button-live {
-  bottom: 30px;
+.git-logo-1 {
   left: 30px;
 }
 
-.projects-button-git {
-  bottom: 30px;
+.git-logo-2 {
   right: 30px;
 }
 
-.projects-button-live:hover,
 .projects-button-git:hover {
-  background: #ffffff;
-  color: #000000;
+  scale: 1.2;
 }
 
 .projects-card:hover {
-  .projects-button-live,
   .projects-button-git {
     opacity: 1;
     transform: translateY(0%);
   }
 
   .projects-card-img {
-    opacity: 0;
+    opacity: 1;
   }
 
-  .projects-card-img-prev {
-    opacity: 1;
+  .projects-card-cover {
+    opacity: 0;
   }
 }
 
@@ -94,9 +81,10 @@
   .projects-card-container {
     flex-direction: column;
     align-items: center;
+    gap: 30px;
   }
 
   .projects-card {
-    width: 50%;
+    width: 70%;
   }
 }

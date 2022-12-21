@@ -1,20 +1,12 @@
 import React from "react";
 import "./Projects.scss";
-import guardian from "../../../../assets/img/projects/project-guardian.png";
-import weather from "../../../../assets/img/projects/project-weather-2.png";
-import weatherPreview from "../../../../assets/img/projects/project-weather-preview.png";
+import { projectUrl, projectImages } from "./ProjectSources";
 
 const Projects = () => {
   // * Methods
   const Redirect = (location) => {
-    if (location === "weatherLive") {
-      const url = "https://world-weather-now.netlify.app/";
-      window.open(url, "_blank");
-    }
-    if (location === "weatherGit") {
-      const url = "https://github.com/ManuuMT/weather-now";
-      window.open(url, "_blank");
-    }
+    const url = projectUrl[location];
+    window.open(url, "_blank");
   };
 
   return (
@@ -22,27 +14,42 @@ const Projects = () => {
       <h2 className="projects-title">Projects</h2>
       <div className="projects-card-container">
         <div className="projects-card">
-          <img src={guardian} className="projects-card-img" alt="Guardian" />
+          <img
+            src={projectImages.guardianCover}
+            className="projects-card-cover"
+            alt="Guardian"
+          />
+          <img
+            src={projectImages.guardian}
+            className="projects-card-img"
+            onClick={() => Redirect("guardianLive")}
+            alt="Guardian"
+          />
+          <img
+            src={projectImages.github}
+            alt="github"
+            onClick={() => Redirect("guardianGit")}
+            className="projects-button-git git-logo-1"
+          />
         </div>
         <div className="projects-card">
-          <img src={weather} className="projects-card-img" alt="Weather" />
           <img
-            src={weatherPreview}
-            className="projects-card-img-prev"
+            src={projectImages.weatherCover}
+            className="projects-card-cover"
             alt="Weather"
           />
-          <button
-            className="projects-button-live"
+          <img
+            src={projectImages.weather}
+            className="projects-card-img"
             onClick={() => Redirect("weatherLive")}
-          >
-            View Live
-          </button>
-          <button
-            className="projects-button-git"
+            alt="Weather"
+          />
+          <img
+            src={projectImages.github}
+            alt="github"
+            className="projects-button-git git-logo-2"
             onClick={() => Redirect("weatherGit")}
-          >
-            Github
-          </button>
+          />
         </div>
       </div>
     </div>
