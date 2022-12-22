@@ -6,6 +6,7 @@ import About from "./Components/About/About.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import "./Home.scss";
 import Projects from "./Components/Projects/Projects.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
 const title = "<ManuDev />";
 
 const Home = () => {
@@ -39,6 +40,7 @@ const Home = () => {
           <About />
           <Skills />
           <Projects />
+          <Contact />
           <Footer />
         </>
       )}

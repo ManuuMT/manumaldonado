@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.scss";
-import { Social } from "./Social.js";
+import profile from "../../../../assets/img/me-attlos.png";
 
 const About = () => {
   // * Life Cycle
@@ -21,50 +21,39 @@ const About = () => {
       }
     );
     observer.observe(document.querySelector(".about-description"));
-    observer.observe(document.querySelector(".about-title-contact"));
-    const socialIcons = document.querySelectorAll(".social-icon");
-    socialIcons.forEach((icon) => observer.observe(icon));
   }, []);
 
   return (
     <div className="about" id="about">
+      <div className="about-profile">
+        <div className="about-profile-container">
+          <img src={profile} className="about-profile-img" alt="Manu" />
+        </div>
+      </div>
       <div className="about-description">
         <h2 className="about-title">About Me</h2>
         <div className="about-description-text">
           <p>
-            My name is Emanuel Maldonado Tuero, but everyone calls me
-            <strong> Manu</strong>. I am 27 years old. I was born in
-            <strong> Argentina </strong>and I've been living in
-            <strong> Spain </strong>since 2018. I spent over 10 years working in
-            customer service, but in 2021 I decided to quit my job and change my
-            life, making programming my full time job.
+            My name is Emanuel Maldonado Tuero, <br /> but everyone calls me
+            <strong> Manu</strong>. <br />
+            <br />I am 27 years old. I was born in
+            <strong>
+              <span className="about-blue"> Arg</span>ent
+              <span className="about-blue">ina</span>
+            </strong>
+            <br />
+            and I've been living in
+            <strong>
+              <span className="about-red"> S</span>
+              <span className="about-yellow">pai</span>
+              <span className="about-red">n </span>
+            </strong>
+            since 2018. <br />
+            <br />I spent over 10 years working in customer service, <br />
+            but in 2021 I decided to quit my job and change my life, <br />
+            making programming my full time job
+            <span className="about-red"> ❤ </span>
           </p>
-        </div>
-      </div>
-      <div className="about-contact">
-        <h2 className="about-title about-title-contact">Contact Me</h2>
-        <div className="about-social-media">
-          <a href={Social.linkedinLink} rel="noreferrer" target="_blank">
-            <img
-              className="social-icon social-linkedin"
-              src={Social.linkedinSrc}
-              alt="linkedin"
-            />
-          </a>
-          <a href={Social.githubLink} rel="noreferrer" target="_blank">
-            <img
-              className="social-icon social-github"
-              src={Social.githubSrc}
-              alt="github"
-            />
-          </a>
-          <a href={Social.mailLink} rel="noreferrer" target="_blank">
-            <img
-              className="social-icon social-mail"
-              src={Social.mailSrc}
-              alt="mail"
-            />
-          </a>
         </div>
       </div>
     </div>

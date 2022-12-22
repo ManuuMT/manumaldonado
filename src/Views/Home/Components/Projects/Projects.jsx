@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.scss";
 import { projectUrl, projectImages } from "./ProjectSources";
 
@@ -8,6 +8,26 @@ const Projects = () => {
     const url = projectUrl[location];
     window.open(url, "_blank");
   };
+
+  // * Life Cycle
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 1,
+        rootMargin: "0px",
+      }
+    );
+    observer.observe(document.querySelector(".projects-title"));
+  }, []);
 
   return (
     <div className="projects">
