@@ -18,6 +18,9 @@ const Home = () => {
     <div className="intro">
       <div className="intro-left-window" />
       <h1 className="intro-logo">{title}</h1>
+      <div className="intro-skip" onClick={() => setLoading(false)}>
+        Skip intro
+      </div>
       <div className="intro-right-window" />
     </div>
   );

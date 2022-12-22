@@ -17,10 +17,19 @@
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 11ch;
-
-  animation: typing 2s steps(11), blink 0.5s infinite step-end alternate;
+  width: calc(25px * 11);
+  animation: typing 2.5s steps(10), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+}
+
+.intro-skip {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 4;
 }
 
 .intro-left-window,
@@ -68,5 +77,15 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-left-window {
+    left: -150%;
+  }
+
+  .intro-right-window {
+    left: 150%;
   }
 }
