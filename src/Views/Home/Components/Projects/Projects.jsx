@@ -30,7 +30,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h2 className="projects-title">Projects</h2>
       <div className="projects-card-container">
         <div className="projects-card">
