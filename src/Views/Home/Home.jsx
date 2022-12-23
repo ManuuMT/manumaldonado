@@ -5,6 +5,8 @@ import HeroTitle from "./Components/HeroTitle/HeroTitle.jsx";
 import About from "./Components/About/About.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import "./Home.scss";
+import Projects from "./Components/Projects/Projects.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
 const title = "<ManuDev />";
 
 const Home = () => {
@@ -16,6 +18,9 @@ const Home = () => {
     <div className="intro">
       <div className="intro-left-window" />
       <h1 className="intro-logo">{title}</h1>
+      <div className="intro-skip" onClick={() => setLoading(false)}>
+        Skip intro
+      </div>
       <div className="intro-right-window" />
     </div>
   );
@@ -35,8 +40,10 @@ const Home = () => {
         <>
           <NavBar />
           <HeroTitle />
-          <Skills />
           <About />
+          <Skills />
+          <Projects />
+          <Contact />
           <Footer />
         </>
       )}

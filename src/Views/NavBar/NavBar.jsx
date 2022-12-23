@@ -33,29 +33,58 @@ const NavBar = () => {
               <div className="nav-link">Hello!</div>
             </Link>
           </li>
+
+          <li className="nav-menu-item">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-50}
+            >
+              <div className="nav-link">About</div>
+            </Link>
+          </li>
+
           <li className="nav-menu-item">
             <Link
               to="skills"
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-50}
             >
               <div className="nav-link">Skills</div>
             </Link>
           </li>
 
           <li className="nav-menu-item">
-            <Link to="about" spy={true} smooth={true} duration={500}>
-              <div className="nav-link">About Me</div>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-50}
+            >
+              <div className="nav-link">Projects</div>
+            </Link>
+          </li>
+
+          <li className="nav-menu-item">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={750}
+              offset={-100}
+            >
+              <div className="nav-link">Contact</div>
             </Link>
           </li>
 
           <li className="nav-menu-item">
             <a href={curriculum} target="_blank" rel="noreferrer">
-              <button className="nav-link nav-button text-center">
-                Resume
-              </button>
+              <button className="nav-link nav-button">Resume</button>
             </a>
           </li>
         </ul>
