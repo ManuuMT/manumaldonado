@@ -41,6 +41,7 @@
   height: 100%;
   position: absolute;
   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in;
   cursor: pointer;
 }
 
@@ -51,10 +52,12 @@
 .projects-button-git {
   width: 50px;
   position: absolute;
-  transition: all 0.5s;
-  opacity: 0;
-  transform: translateY(100%);
   bottom: 15px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  opacity: 0;
 }
 
 .git-logo-1 {
@@ -73,6 +76,7 @@
   .projects-button-git {
     opacity: 1;
     transform: translateY(0%);
+    -webkit-transform: translateY(0%);
   }
 
   .projects-card-img {
