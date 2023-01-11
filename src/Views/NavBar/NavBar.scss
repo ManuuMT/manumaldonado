@@ -132,21 +132,20 @@
 }
 
 .nav-button {
-  margin-top: 20px;
   background: #ffffff;
   color: #000000;
-  border: none;
+  margin-top: 20px;
+  padding: 5px 15px;
   border-radius: 20px;
   font-size: 20px;
-  height: 40px;
-  width: 100%;
+  cursor: pointer;
   transition: all 0.5s;
 }
 
 .nav-button:hover {
   background: #d0ee0f;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 @keyframes ShowNavLogo {
@@ -209,7 +208,14 @@
     top: 60px;
     width: 100vw;
     height: 40px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
     transform: translate(0%, -100%);
+  }
+
+  .nav-menu::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-menu-ul {

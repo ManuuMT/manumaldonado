@@ -83,8 +83,13 @@ const NavBar = () => {
           </li>
 
           <li className="nav-menu-item">
-            <a href={curriculum} target="_blank" rel="noreferrer">
-              <button className="nav-link nav-button">Resume</button>
+            <a
+              className="nav-button"
+              href={curriculum}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
             </a>
           </li>
         </ul>

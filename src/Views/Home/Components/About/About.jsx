@@ -33,27 +33,18 @@ const About = () => {
       <div className="about-description">
         <h2 className="about-title">About Me</h2>
         <div className="about-description-text">
+          <p>My name is Emanuel Maldonado Tuero,</p>
           <p>
-            My name is Emanuel Maldonado Tuero, <br /> but everyone calls me
-            <strong> Manu</strong>. <br />
-            <br />I am 27 years old. I was born in
-            <strong>
-              <span className="about-blue"> Arg</span>ent
-              <span className="about-blue">ina</span>
-            </strong>
-            <br />
-            and I've been living in
-            <strong>
-              <span className="about-red"> S</span>
-              <span className="about-yellow">pai</span>
-              <span className="about-red">n </span>
-            </strong>
-            since 2018. <br />
-            <br />I spent over 10 years working in customer service, <br />
-            but in 2021 I decided to quit my job and change my life, <br />
-            making programming my full time job
-            <span className="about-red"> ❤ </span>
+            but everyone calls me<strong> Manu</strong>.
           </p>
+          <br />
+          <p>I'm 27 years old.</p>
+          <p>I consider myself a web design enthusiast</p>
+          <p>and a philosophy lover 🤯</p>
+          <br />
+          <p>I've spent over 10 years working in customer service,</p>
+          <p>but in 2021 I decided to quit my job and change my life,</p>
+          <p>making programming my full time job 🚀</p>
         </div>
       </div>
     </div>
