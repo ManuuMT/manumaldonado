@@ -22,7 +22,7 @@ import express from "../../../../assets/img/tech/express.png";
 import adobePS from "../../../../assets/img/tools/adobe-ps.png";
 import adobeXD from "../../../../assets/img/tools/adobe-xd.png";
 import figma from "../../../../assets/img/tools/figma.png";
-import mockoon from "../../../../assets/img/tools/mockoon.png";
+import jira from "../../../../assets/img/tools/jira.png";
 import notion from "../../../../assets/img/tools/notion.png";
 import postman from "../../../../assets/img/tools/postman.png";
 
@@ -55,6 +55,6 @@ export const Tools = [
   { src: adobeXD, title: "Adobe XD" },
   { src: figma, title: "Figma" },
   { src: postman, title: "Postman" },
-  { src: mockoon, title: "Mockoon" },
+  { src: jira, title: "Jira" },
   { src: notion, title: "Notion" },
 ];
