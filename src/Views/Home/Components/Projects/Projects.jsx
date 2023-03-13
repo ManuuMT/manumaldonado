@@ -71,6 +71,25 @@ const Projects = () => {
             onClick={() => Redirect("weatherGit")}
           />
         </div>
+        <div className="projects-card">
+          <img
+            src={projectImages.netflixCover}
+            className="projects-card-cover"
+            alt="Guardian"
+          />
+          <img
+            src={projectImages.netflix}
+            className="projects-card-img"
+            onClick={() => Redirect("netflixLive")}
+            alt="Guardian"
+          />
+          <img
+            src={projectImages.github}
+            alt="github"
+            onClick={() => Redirect("netflixGit")}
+            className="projects-button-git git-logo-1"
+          />
+        </div>
       </div>
     </div>
   );
